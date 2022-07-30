@@ -3,7 +3,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "App\\Dao\\": "src/dao/"
+            "App\\Dao\\": "src/dao/",
+            "App\\Models\\": "src/models/"
         }
     },
     "authors": [

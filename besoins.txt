@@ -12,4 +12,16 @@ NB :
 1- Creation de Classe 
    -Une Classe User
        //Proprietes login et password
+
+
+V3
+
+Dans ce système d'authentification, on distingue deux types d'utilisateurs, 
+des clients et des gestionnaires .
+--Clients on voudrait connaître l’adresse de livraison et le téléphone 
+--Gestionnaires on voudrait connaître le matricule et le niveau de recrutement
+
+NB :
+-Les utilisateurs sont enregistrés dans un fichier Json
+-Les utilisateurs sont enregistrés dans la BD
        

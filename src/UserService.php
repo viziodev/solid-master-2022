@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Models\User;
 use App\Dao\UserDaoBD;
 use App\Dao\UserDaoJson;
 //Responsabilite : 
@@ -32,7 +33,7 @@ class UserService{
                     //a.Stoker User dans la Session
                    // Session::set('user_connect',$user);
                     //b.Affcher les Infos du User connecte
-                    Vue::affiche("Login : $user->login");
+                    Vue::affiche($user->affiche());
                }else{
                      //4. Si User n'existe pas 
                   Vue::affiche("Login ou Mot de Passe Incorrect");

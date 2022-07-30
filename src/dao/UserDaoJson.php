@@ -2,12 +2,13 @@
 
 namespace App\Dao;
 
-use App\User;
-
+use App\Models\User;
+use App\Models\Client;
+use App\Models\Gestionnaire;
 
 //Responsabilite : 
  //Acces des donnes d'utilisateur dans le fichier Json
-class UserDaoJson implements IDao{
+class UserDaoJson implements IDao,IDaoJson{
     
     public static function findUserLoginAndPassword($user){
         //Chercher le User dans le Fichier Json
@@ -15,10 +16,7 @@ class UserDaoJson implements IDao{
           $users=self::loadData('users');
           foreach ( $users as  $value) {
               if($value['login']==$user->login and $value['password']==$user->password){
-                  $user=new User();
-                  $user->login=$value['login'];
-                  $user->password=$value['password'];
-                  return $user;
+                     return User::factory($value);
               }
           }
 
@@ -39,10 +37,5 @@ class UserDaoJson implements IDao{
             }
     }
 
-    public static function openConnexion(){
-
-    }
-    public static function closeConnexion(){
-
-    }
+   
 }

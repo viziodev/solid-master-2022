@@ -2,12 +2,14 @@
 
 namespace App\Dao;
 
-use App\User;
+use App\Models\User;
+
+
 
 
 //Responsabilite : 
  //Acces des donnes d'utilisateur dans la BD
-class UserDaoBD implements IDao{
+class UserDaoBD implements IDao,IDaoBd{
     //Design Pattern Singleton
     private static  $pdo=null;//
     public static function findUserLoginAndPassword(User $user){
@@ -57,9 +59,7 @@ class UserDaoBD implements IDao{
 
 
 
-    public static  function loadData($key=null){
-
-    }
+   
 
 
 }

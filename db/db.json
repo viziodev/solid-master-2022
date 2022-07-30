@@ -1,8 +1,30 @@
 {
     "users":[
         {
-            "login":"user",
-            "password":"user"
+            "login":"client",
+            "password":"client",
+            "role":"Role_Client",
+            "telephone":"Telephone Client",
+            "adresse":"Adresse Client",
+            "type":"Client"
+        },
+        {
+            "login":"gestionnaire",
+            "password":"gestionnaire",
+            "role":"Role_Gestionnaire",
+            "matricule":"MatOO1",
+            "niveau":"Bac + 2",
+            "type":"Gestionnaire"
+
+        },
+        {
+            "login":"visiteur",
+            "password":"visiteur",
+            "role":"Role_Visiteur",
+            "nom":"Nom Visiteur",
+            "prenom":"Prenom Visiteur",
+            "type":"Visiteur"
+
         }
     ]
 }

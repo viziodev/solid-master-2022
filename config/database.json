@@ -1,0 +1,11 @@
+{
+    "dao":[
+        {
+            "bd":"App\\Dao\\UserDaoBD"
+        },
+        {
+            "json":"App\\Dao\\UserDaoJson"
+        }
+      
+    ]
+}

@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Dao\\' => array($baseDir . '/src/dao'),
     'App\\' => array($baseDir . '/src'),
 );

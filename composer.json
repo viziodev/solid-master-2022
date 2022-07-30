@@ -2,7 +2,8 @@
     "name": "mac/solid-master",
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "App\\Dao\\": "src/dao/"
         }
     },
     "authors": [

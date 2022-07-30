@@ -1,9 +1,13 @@
 <?php 
 
-namespace App;
+namespace App\Dao;
+
+use App\User;
+
+
 //Responsabilite : 
  //Acces des donnes d'utilisateur dans le fichier Json
-class UserDaoJson{
+class UserDaoJson implements IDao{
     
     public static function findUserLoginAndPassword($user){
         //Chercher le User dans le Fichier Json
@@ -22,14 +26,23 @@ class UserDaoJson{
     }
 
     public static  function loadData($key=null){
-           //1.Ouvrir et charger les donnees Json 
+
+      
+              //1.Ouvrir et charger les donnees Json 
            $json=file_get_contents("./db/db.json");
-          //2.Convertir le json en tableau
-           $data=json_decode($json,true);
-           if(is_null($key)){
-               return $data;
-           }else{
-              return $data[$key];
-           }
+           //2.Convertir le json en tableau
+            $data=json_decode($json,true);
+            if(is_null($key)){
+                return $data;
+            }else{
+               return $data[$key];
+            }
+    }
+
+    public static function openConnexion(){
+
+    }
+    public static function closeConnexion(){
+
     }
 }

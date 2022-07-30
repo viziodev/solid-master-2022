@@ -1,0 +1,15 @@
+V1:
+Mettre en place un système d’authentification(connexion).
+NB :
+-Les utilisateurs sont enregistrés dans un fichier Json
+
+V2
+Mettre en place un système d’authentification(connexion).
+NB :
+-Les utilisateurs sont enregistrés dans un fichier Json
+-Les utilisateurs sont enregistrés dans la BD
+
+1- Creation de Classe 
+   -Une Classe User
+       //Proprietes login et password
+       
